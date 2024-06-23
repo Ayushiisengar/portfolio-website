@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Mono", monospace;
+}
+body{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    
+    
+}
+header{
+    background-color: #E6E6FA;
+    height: 100vh;
+    width: 15vw;
+}
+main{
+    background-color: #FFFFFF;
+    height: 100vh;
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+}
+.introduction{
+    height:70vh;
+    width: 85vw;
+    background-color: white;
+}
+.skills{
+    height: 10vh;
+    width: 85vw;
+    background-color: #E6E6FA;
+}
+.sociallinks{
+    height:20vh ;
+    width: 85vw;
+    background-color: white;
+}
+header nav ul{
+    text-align: center;
+}
+header nav ul li{
+    font-size: 3vh;
+    
+    color: #2F4F4F;
+    line-height: 6vh;
+}
+header nav ul li a{
+    text-decoration: none;
+    font-size: 2vh;
+    color: #2F4F4F;
+    line-height: 3vh;
+}
+.name{
+    margin-left: 10vw;
+    margin-top: 8vh;
+    color: #2F4F4F;
+    font-size: 8vh;
+    
+}
+.details{
+    margin-left: 10vw;
+    margin-top: 5vh;
+    margin-right: 10vw;
+    color: #2F4F4F;
+    font-size: 3vh;
+    line-height: 7vh;
+}
+.skills{
+    /* Hide overflow for smooth animation */
+    white-space: nowrap; /* Prevent text from wrapping */
+    width: 85vw; /* Full width container */
+}
+
+.skills pre {
+    font-family: "Lato", sans-serif;
+    font-size: 5vh;
+    font-weight: bold;
+    display: inline-block; /* Display as inline block for animation */
+    animation: slide 20s linear infinite; /* Animation properties */
+}
+
+@keyframes slide {
+    0% { transform: translateX(100%); } /* Start position */
+    100% { transform: translateX(-100%); } /* End position */
+}
+.sociallinks a img{
+    height: 8vh;
+    width: 4vw;
+    margin: 1vh;
+}
